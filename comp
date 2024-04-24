@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# autor: wellyton-xs <wellyton.offcer@gmail.com>
+# nome: comp.sh
+# objetivo: automatizar compilação c
+# obs: caso necessário edite os diretórios
+#      das variáveis $src e $target
+# modo de uso:
+# ./comp <src> <target>
+
+#gcc "$src/$1" -o "$target/$2"
+
+src="./src"
+target="./target"
+
+print(){
+	printf '%s\n' "$1"
+}
+
+print "start compilation!"
+
+for file in "$src"/*.c; do
+    filename=$(basename "$file")
+    print "get: $filename"
+    filename_without_extension="${filename%.c}"
+    print "get target: $filename_without_extension"
+    print "-> compiling: $filename"
+    gcc "$file" -o "$target/$filename_without_extension"
+    print "% compiled: $target/$filename_without_extension"
+done
+

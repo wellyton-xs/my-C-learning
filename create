@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
 
-c_template="
-
-#include <stdio.h>
+c_template="#include <stdio.h>
 
 int main(){
 
 	return 0;
 }
-
 "
 
 echo "$c_template" >> "src/$1".c
-
-micro "src/$1".c
+vim "src/$1".c

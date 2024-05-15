@@ -7,7 +7,7 @@ int main(){
 	int num = 10;
 
 	if (num > 0) {
-		printf("the value is a positive number\n")
+		printf("the value is a positive number\n");
 	} else if (num < 0) {
 		printf("the value is a negative number\n");
 	} else {

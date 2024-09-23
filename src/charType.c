@@ -2,19 +2,19 @@
 
 int main()
 {
-	// the char type only store one character
-	char myGrade = 'A';
-	printf("this is a character: %c\n", myGrade);
+  // the char type only store one character
+  char myGrade = 'A';
+  printf("this is a character: %c\n", myGrade);
 
-	/*/
-		but we can create an string
-		an string is a list of characters
+  /*/
+    but we can create an string
+    an string is a list of characters
 
-		format specifier: %s
-	/*/
+    format specifier: %s
+    /*/
 	
-	char string[] = "this is a string";
-	printf("%s", string);
+  char string[] = "this is a string";
+  printf("%s", string);
 	
-	return 0;
+  return 0;
 }

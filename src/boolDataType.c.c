@@ -3,20 +3,20 @@
 
 int main(){
 
-	/*/
-	1: booleans are returned as a integer
-	2: booleans can only returns two values
-	/*/
-
+  /*/
+    1: booleans are returned as a integer
+    2: booleans can only returns two values
+    /*/
+  
 	
-	bool isProgrammingFun = true;
-	printf("is programming fun? %d", isProgrammingFun);
+  bool isProgrammingFun = true;
+  printf("is programming fun? %d", isProgrammingFun);
 
-	// you can verify the result of a comparison with a bool value
-	int x = 10;
-	int y = 9;
-	printf("%d", x > y);
+  // you can verify the result of a comparison with a bool value
+  int x = 10;
+  int y = 9;
+  printf("%d", x > y);
 	
-	return 0;
+  return 0;
 }
 

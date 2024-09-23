@@ -2,24 +2,24 @@
 
 int main(){
 
-	// implicit conversion
+  // implicit conversion
 	
-	// the compiler will convert this int to a float
-	float numberNine = 9;
+  // the compiler will convert this int to a float
+  float numberNine = 9;
 
-	printf("%f", numberNine);
+  printf("%f", numberNine);
 
-	// another example
-	int ninePointNineNine = 9.99;
+  // another example
+  int ninePointNineNine = 9.99;
 	
-	printf("%d", ninePointNineNine); 
+  printf("%d", ninePointNineNine); 
 
-	// explicit conversion
+  // explicit conversion
 
-	int five = 5;
-	int two = 2;
+  int five = 5;
+  int two = 2;
 	
-	float sum = (float) five / two;
+  float sum = (float) five / two;
 	
-	printf("%f", sum); 
+  printf("%f", sum); 
 }
